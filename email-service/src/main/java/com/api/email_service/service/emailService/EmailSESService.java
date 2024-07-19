@@ -24,7 +24,7 @@ public class EmailSESService implements EmailSenderGateway {
 
 
         SendEmailRequest emailRequest = new SendEmailRequest()
-                .withSource("fa34silva@gmail.com")
+                .withSource("your_email")
                 .withDestination(new Destination().withCcAddresses())
                 .withMessage(new Message()
                         .withSubject(new Content(subject))
